@@ -9,8 +9,11 @@ import operation.UIOperation;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import excelExportAndFileIO.ReadGuru99ExcelFile;
@@ -18,9 +21,19 @@ import excelExportAndFileIO.ReadGuru99ExcelFile;
 public class HybridExecuteTest {
 	
 	WebDriver webdriver = null;
+	String Browser_name=null;
+	@Parameters({ "browser" })
+    @Test(priority=0)
+	public void GetBrowserName(String browser )
+	{
+		System.out.println("Browser Name is "+browser);
+		Browser_name=browser;
+	}
 	
-    @Test(dataProvider="hybridData")
-	public void testLogin(String testcaseName,String keyword,String objectName,String objectType,String value) throws Exception {
+	
+	
+	@Test(dataProvider="hybridData")
+	public void testLogin(String testcaseName,String keyword,String objectName,String objectType,String value/*String browser*/ ) throws Exception {
 		// TODO Auto-generated method stub
     	System.out.println("Executing Script");
     	System.out.println("Value of testcaseName" + testcaseName);
@@ -31,9 +44,20 @@ public class HybridExecuteTest {
     	
     	
     	if(testcaseName!=null&&testcaseName.length()!=0){
+    	if(Browser_name.equalsIgnoreCase("Firefox"))
+    	{
+    		System.out.println("Browser Name is "+Browser_name);
+    		System.setProperty("webdriver.gecko.driver", "C:\\Workspace\\Custom Installations\\geckodriver-v0.19.1-win64\\geckodriver.exe"); 	
+    		webdriver=new FirefoxDriver();
+    	}
     	
-    	System.setProperty("webdriver.gecko.driver", "C:\\Workspace\\Custom Installations\\geckodriver-v0.19.1-win64\\geckodriver.exe"); 	
-    	webdriver=new FirefoxDriver();
+    	else if(Browser_name.equalsIgnoreCase("Chrome"))
+    	{
+    		System.out.println("Browser Name is "+Browser_name);
+    		System.setProperty("webdriver.chrome.driver", "C:\\Workspace\\Custom Installations\\chromedriver_win32_2.34\\chromedriver.exe");   //
+			
+    		webdriver = new ChromeDriver();
+    	}
     	}
         ReadObject object = new ReadObject();
         Properties allObjects =  object.getObjectRepository();
@@ -43,6 +67,12 @@ public class HybridExecuteTest {
     				objectType, value);
     	  
 	
+	}
+	
+	@AfterTest()
+	public void afterTest()
+	{
+		webdriver.close();
 	}
 
     
