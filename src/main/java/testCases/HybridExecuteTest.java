@@ -12,7 +12,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-
+import org.openqa.selenium.chrome.ChromeDriver;
 import excelExportAndFileIO.ReadGuru99ExcelFile;
 
 public class HybridExecuteTest {
@@ -32,8 +32,8 @@ public class HybridExecuteTest {
     	
     	if(testcaseName!=null&&testcaseName.length()!=0){
     	
-    	System.setProperty("webdriver.gecko.driver", "C:\\Workspace\\Custom Installations\\geckodriver-v0.19.1-win64\\geckodriver.exe"); 	
-    	webdriver=new FirefoxDriver();
+    	System.setProperty("webdriver.chrome.driver", "C:\\Workspace\\Custom Installations\\chromedriver_win32_2.34\\chromedriver.exe");   //
+		webdriver = new ChromeDriver();
     	}
         ReadObject object = new ReadObject();
         Properties allObjects =  object.getObjectRepository();
