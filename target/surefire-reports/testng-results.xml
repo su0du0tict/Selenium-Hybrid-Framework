@@ -1,13 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="10200" started-at="2018-01-10T07:07:33Z" finished-at="2018-01-10T07:07:43Z">
+  <suite name="Suite" duration-ms="8076" started-at="2018-01-10T19:16:14Z" finished-at="2018-01-10T19:16:22Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="10200" started-at="2018-01-10T07:07:33Z" finished-at="2018-01-10T07:07:43Z">
+    <test name="Test" duration-ms="8076" started-at="2018-01-10T19:16:14Z" finished-at="2018-01-10T19:16:22Z">
       <class name="testCases.HybridExecuteTest">
-        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.HybridExecuteTest@2f7a2457]" name="testLogin" duration-ms="3345" started-at="2018-01-09T23:07:34Z" data-provider="hybridData" finished-at="2018-01-09T23:07:37Z">
+        <test-method status="PASS" signature="GetBrowserName(java.lang.String)[pri:0, instance:testCases.HybridExecuteTest@668bc3d5]" name="GetBrowserName" duration-ms="5" started-at="2018-01-10T11:16:14Z" finished-at="2018-01-10T11:16:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetBrowserName -->
+        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.HybridExecuteTest@668bc3d5]" name="testLogin" duration-ms="1758" started-at="2018-01-10T11:16:15Z" data-provider="hybridData" finished-at="2018-01-10T11:16:16Z">
           <params>
             <param index="0">
               <value>
@@ -38,7 +49,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.HybridExecuteTest@2f7a2457]" name="testLogin" duration-ms="3719" started-at="2018-01-09T23:07:37Z" data-provider="hybridData" finished-at="2018-01-09T23:07:41Z">
+        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.HybridExecuteTest@668bc3d5]" name="testLogin" duration-ms="1507" started-at="2018-01-10T11:16:16Z" data-provider="hybridData" finished-at="2018-01-10T11:16:18Z">
           <params>
             <param index="0">
               <value>
@@ -69,7 +80,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.HybridExecuteTest@2f7a2457]" name="testLogin" duration-ms="1603" started-at="2018-01-09T23:07:41Z" data-provider="hybridData" finished-at="2018-01-09T23:07:42Z">
+        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.HybridExecuteTest@668bc3d5]" name="testLogin" duration-ms="959" started-at="2018-01-10T11:16:18Z" data-provider="hybridData" finished-at="2018-01-10T11:16:19Z">
           <params>
             <param index="0">
               <value>
@@ -100,7 +111,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.HybridExecuteTest@2f7a2457]" name="testLogin" duration-ms="92" started-at="2018-01-09T23:07:42Z" data-provider="hybridData" finished-at="2018-01-09T23:07:42Z">
+        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.HybridExecuteTest@668bc3d5]" name="testLogin" duration-ms="106" started-at="2018-01-10T11:16:19Z" data-provider="hybridData" finished-at="2018-01-10T11:16:19Z">
           <params>
             <param index="0">
               <value>
@@ -131,7 +142,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.HybridExecuteTest@2f7a2457]" name="testLogin" duration-ms="83" started-at="2018-01-09T23:07:42Z" data-provider="hybridData" finished-at="2018-01-09T23:07:42Z">
+        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.HybridExecuteTest@668bc3d5]" name="testLogin" duration-ms="101" started-at="2018-01-10T11:16:19Z" data-provider="hybridData" finished-at="2018-01-10T11:16:19Z">
           <params>
             <param index="0">
               <value>
@@ -162,7 +173,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.HybridExecuteTest@2f7a2457]" name="testLogin" duration-ms="992" started-at="2018-01-09T23:07:42Z" data-provider="hybridData" finished-at="2018-01-09T23:07:43Z">
+        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.HybridExecuteTest@668bc3d5]" name="testLogin" duration-ms="1109" started-at="2018-01-10T11:16:19Z" data-provider="hybridData" finished-at="2018-01-10T11:16:20Z">
           <params>
             <param index="0">
               <value>
@@ -193,6 +204,10 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:testCases.HybridExecuteTest@668bc3d5]" name="afterTest" is-config="true" duration-ms="2169" started-at="2018-01-10T11:16:20Z" finished-at="2018-01-10T11:16:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
       </class> <!-- testCases.HybridExecuteTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
