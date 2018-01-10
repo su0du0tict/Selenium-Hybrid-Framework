@@ -32,7 +32,7 @@ public class HybridExecuteTest {
     	
     	if(testcaseName!=null&&testcaseName.length()!=0){
     	
-    	System.setProperty("webdriver.gecko.driver", "C:\\Demo\\geckodriver\\geckodriver-v0.19.1-win64.exe"); 	
+    	System.setProperty("webdriver.gecko.driver", "C:\\Workspace\\Custom Installations\\geckodriver-v0.19.1-win64\\geckodriver.exe"); 	
     	webdriver=new FirefoxDriver();
     	}
         ReadObject object = new ReadObject();
